@@ -1,0 +1,28 @@
+# AI assistant context files
+GEMINI.md
+CLAUDE.md
+
+# Dependencies
+node_modules/
+
+# Docusaurus build output
+website/build/
+website/.docusaurus/
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*

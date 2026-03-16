@@ -1,0 +1,218 @@
+/* =============================================
+   AI on CCE - Global Styles
+   Tech-Forward Dark Theme
+   ============================================= */
+
+:root {
+  /* Huawei Cloud Tech Palette */
+  --ifm-color-primary: #00C6FF;
+  --ifm-color-primary-dark: #00AADD;
+  --ifm-color-primary-darker: #0099CC;
+  --ifm-color-primary-darkest: #007BAA;
+  --ifm-color-primary-light: #33D4FF;
+  --ifm-color-primary-lighter: #66DFFF;
+  --ifm-color-primary-lightest: #99EBFF;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 198, 255, 0.12);
+
+  /* CCE Tech Variables */
+  --cce-navy-deepest: #020A14;
+  --cce-navy-deep:    #040E1C;
+  --cce-navy:         #071428;
+  --cce-navy-mid:     #0A1D3A;
+  --cce-cyan:         #00C6FF;
+  --cce-cyan-dim:     rgba(0, 198, 255, 0.6);
+  --cce-blue:         #0066CC;
+  --cce-blue-bright:  #0EA5E9;
+  --cce-indigo:       #4F46E5;
+  --cce-red:          #CF0A2C; /* Huawei brand red */
+  --cce-green:        #00D17A;
+  --cce-glow-cyan:    0 0 20px rgba(0, 198, 255, 0.35), 0 0 40px rgba(0, 198, 255, 0.15);
+  --cce-glow-blue:    0 0 20px rgba(14, 165, 233, 0.3);
+  --cce-border-glow:  rgba(0, 198, 255, 0.25);
+  --cce-card-bg:      rgba(7, 20, 40, 0.8);
+  --cce-card-border:  rgba(0, 198, 255, 0.15);
+  --ifm-font-family-base: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --ifm-heading-font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #00C6FF;
+  --ifm-background-color: #020A14;
+  --ifm-background-surface-color: #040E1C;
+  --ifm-font-color-base: #C8E6F5;
+  --ifm-navbar-background-color: rgba(2, 10, 20, 0.95);
+  --ifm-navbar-link-color: #A0C8E8;
+  --ifm-toc-border-color: rgba(0, 198, 255, 0.15);
+}
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+.navbar {
+  background: rgba(2, 10, 20, 0.92) !important;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 198, 255, 0.12);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(0, 198, 255, 0.08);
+}
+
+[data-theme='light'] .navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 1px solid rgba(0, 100, 200, 0.12);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+
+.navbar__brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.navbar__title {
+  background: linear-gradient(90deg, #00C6FF, #0EA5E9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+.navbar__link {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0.5rem 0.875rem !important;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.navbar__link:hover {
+  color: #00C6FF !important;
+  background: rgba(0, 198, 255, 0.08);
+}
+
+/* =============================================
+   SIDEBAR
+   ============================================= */
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background: linear-gradient(180deg, #040E1C 0%, #040E1C 100%);
+  border-right: 1px solid rgba(0, 198, 255, 0.1);
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+  background: rgba(0, 198, 255, 0.08) !important;
+  color: #00C6FF !important;
+  transform: translateX(3px);
+}
+
+.menu__link--active {
+  background: linear-gradient(90deg, rgba(0, 198, 255, 0.2), rgba(14, 165, 233, 0.1)) !important;
+  color: #00C6FF !important;
+  font-weight: 600 !important;
+  border-left: 3px solid #00C6FF;
+}
+
+/* =============================================
+   CODE BLOCKS
+   ============================================= */
+.theme-code-block {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 198, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .theme-code-block {
+  background: #040E1C;
+}
+
+.prism-code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace !important;
+  font-size: 0.875rem !important;
+  line-height: 1.7 !important;
+}
+
+code:not([class*="language-"]) {
+  background: rgba(0, 198, 255, 0.1) !important;
+  color: #00C6FF !important;
+  padding: 0.125rem 0.4rem !important;
+  border-radius: 4px !important;
+  font-size: 0.875em !important;
+  border: 1px solid rgba(0, 198, 255, 0.2) !important;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+}
+
+/* =============================================
+   GLOBAL ANIMATIONS
+   ============================================= */
+@keyframes cceGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes ccePulse {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1; }
+}
+
+@keyframes cceFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+
+@keyframes scanLine {
+  0%   { transform: translateY(-100%); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateY(1000%); opacity: 0; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(0, 198, 255, 0.3); }
+  50%       { box-shadow: 0 0 30px rgba(0, 198, 255, 0.6), 0 0 60px rgba(0, 198, 255, 0.2); }
+}
+
+@keyframes fadeInUp {
+  0%   { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  0%   { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* =============================================
+   TABLE OF CONTENTS
+   ============================================= */
+.table-of-contents__link {
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.table-of-contents__link:hover {
+  color: #00C6FF;
+  background: rgba(0, 198, 255, 0.08);
+}
+
+.table-of-contents__link--active {
+  color: #00C6FF !important;
+  font-weight: 600;
+  border-left: 2px solid #00C6FF;
+}
+
+/* =============================================
+   BREADCRUMBS
+   ============================================= */
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #00C6FF;
+  font-weight: 600;
+}
